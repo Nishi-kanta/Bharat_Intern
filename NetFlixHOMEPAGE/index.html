@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Homepage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <div id="nav" class="nav">
+      <img class="nav__logo" src="image/logo3.png" alt="" />
+      <img class="nav__avatar" src="image/avator.png" alt="" />
+    </div>
+
+    <!-- header -->
+    <header class="banner">
+      <div class="banner__contents">
+        <h1 class="banner__title">Gossebumps</h1>
+        <div class="banner__buttons">
+          <button class="banner__button">Play</button>
+          <button class="banner__button">My List</button>
+        </div>
+        <h1 class="banner__description">
+          To carry out the biggest heist in history, a mysterious man called The Professor recruits
+          a band of eight robbers who have a single characteristic: n...
+        </h1>
+      </div>
+      <div class="banner--fadeBottom"></div>
+    </header>
+
+    <!-- Netflix Originals -->
+    <div class="row">
+      <h2>NETFLIX ORIGINALS</h2>
+      <div class="row__posters">
+        <img class="row__poster row__posterLarge" src="image/movie1.jpeg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="image/movie2.jpeg" alt="" />
+        <img class="row__poster row__posterLarge" src="image/movie3.jpeg" alt="" />
+        <img class="row__poster row__posterLarge" src="image/movie4.jpeg" alt="" />
+        <img class="row__poster row__posterLarge" src="image/movie10.jpeg" alt="" />
+        <img class="row__poster row__posterLarge" src="image/movie6.jpeg" alt="" />
+
+      </div>
+    </div>
+
+    <!-- Trending Now -->
+    <div class="row">
+      <h2>Trending Now</h2>
+      <div class="row__posters">
+        <img class="row__poster row__posterLarge" src="image/movie12.jpeg" alt="" />
+        <img class="row__poster row__posterLarge" src="image/movie13.jpeg" alt="" />
+        <img class="row__poster row__posterLarge" src="image/movie14.jpeg" alt="" />
+        <img class="row__poster row__posterLarge" src="image/movie11.jpeg" alt="" />
+        <img class="row__poster row__posterLarge" src="image/movie16.jpeg" alt="" />
+
+      </div>
+    </div>
+
+    <!-- Top Rated -->
+    <div class="row">
+      <h2>Top Rated</h2>
+      <div class="row__posters">
+        <img class="row__poster row__posterLarge" src="image/movie2.jpeg" alt="" />
+        <img class="row__poster row__posterLarge" src="image/movie3.jpeg" alt="" />
+        <img class="row__poster row__posterLarge" src="image/movie11.jpeg" alt="" />
+        <img class="row__poster row__posterLarge" src="image/movie10.jpeg" alt="" />
+        <img class="row__poster row__posterLarge" src="image/movie14.jpeg" alt="" />
+      </div>
+    </div>
+
+    <!-- Action Movies -->
+    <div class="row">
+      <h2>Action Movies</h2>
+      <div class="row__posters">
+        <img class="row__poster row__posterLarge" src="image/actionm1.jpeg" alt="" />
+        <img class="row__poster row__posterLarge" src="image/actionm2.jpeg" alt="" />
+        <img class="row__poster row__posterLarge" src="image/actionm3.jpeg" alt="" />
+        <img class="row__poster row__posterLarge" src="image/actionm4.jpeg" alt="" />
+        <img class="row__poster row__posterLarge" src="image/actionm5.jpeg" alt="" />
+
+      </div>
+    </div>
+
+    <!-- Comedy Movies -->
+   
+    <!-- Horror Movies -->
+    <div class="row">
+      <h2>Horror Movies</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="image/horrer1.jpeg" alt="" />
+
+        <img class="row__poster" src="image/horrer2.jpeg" alt="" />
+        <img class="row__poster" src="image/horrer3.jpeg" alt="" />
+        <img class="row__poster" src="image/horrer4.jpeg" alt="" />
+        <img class="row__poster" src="image/horrer5.jpeg" alt="" />
+        <img class="row__poster" src="image/horrer6.jpeg" alt="" />
+
+      </div>
+    </div>
+
+   
+
+    <!-- Documentaries -->
+    <div class="row">
+      <h2>Documentaries</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="image/movie1.jpeg" alt="" />
+
+        <img class="row__poster" src="image/movie10.jpeg" alt="" />
+        <img class="row__poster" src="image/movie11.jpeg" alt="" />
+        <img class="row__poster" src="image/movie12.jpeg" alt="" />
+        <img class="row__poster" src="image/movie4.jpeg" alt="" />
+        <img class="row__poster" src="image/movie13.jpeg" alt="" />
+        <img class="row__poster" src="image/movie3.jpeg" alt="" />
+
+      </div>
+    </div>
+
+    <script>
+      const nav = document.getElementById('nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY >= 100) {
+          nav.classList.add('nav__black');
+        } else {
+          nav.classList.remove('nav__black');
+        }
+      });
+    </script>
+  </body>
+</html>
